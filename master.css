@@ -5,8 +5,8 @@
 
 
 .header {
-  height: 130px;
-  background-color: rgba(3, 6, 36, 1);
+  height: 120px;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   top: 0;
@@ -18,27 +18,35 @@
 
 .header__title {
   font-size: 30px;
-  font-family: 'arial black';
-  letter-spacing: 0.3em;
-  color: #fff;
-
+  font-family: 'Impact';
+  letter-spacing: 0.5em;
+  color:  #fff;
+  text-shadow:
+    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
+    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
+    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
+    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
+    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
+    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
+    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
+    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
 }
 
 .title2 {
-color:  rgba(3, 6, 36, 1);
-text-shadow:
-    white 1px 0px,  white -1px 0px,
-    white 0px -1px, white 0px 1px,
-    white 1px 1px , white -1px 1px,
-    white 1px -1px, white -1px -1px,
-    white 0.5px 1px,  white -0.5px 1px,
-    white 0.5px -1px, white -0.5px -1px,
-    white 1px 0.5px,  white -1px 0.5px,
-    white 1px -0.5px, white -1px -0.5px;
+  color:  rgba(255, 255, 255, 1);
+  text-shadow:
+    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
+    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
+    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
+    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
+    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
+    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
+    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
+    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
 }
 
 .items {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .items ul li{
@@ -48,50 +56,52 @@ text-shadow:
 .items a{
   text-decoration: none;
   font-size: 17px;
-  font-family: 'arial black';
-  color: #fff;
+  font-family: 'Impact';
+  color:  #fff;
+  text-shadow:
+    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
+    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
+    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
+    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
+    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
+    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
+    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
+    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
   margin:0 100px;
 }
 .body {
   height: 810px;
-  background-color: rgba(3, 6, 36, 1);
-  background-image: url('images/818.jpg');
+  background-color: #fff;
+  background-image: url('images/human.jpg');
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
   position: relative;
 }
 
-.background_black {
-  top: 0%;
+.body_message_bottom {
+  text-align: center;
+  top: 75%;
+  font-size: 60px;
+  font-family: 'Hiragino Mincho Pro';
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  position: relative;
+  color: rgb(136, 136, 136);
+  padding-bottom: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(3, 6, 36, 0.92);
 }
 
-.body_message {
-  text-align: center;
-  top: 50%;
-  font-size: 80px;
-  color: #fff;
-  font-family: 'Georgia';
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  background: linear-gradient(transparent 95%, rgb(245, 249, 51) 95%);
-  position: relative;
-  color: rgb(245, 249, 51);
-  padding-bottom: 0;
+.about {
+  height: 780px;
+  background-color: yellow;
+  z-index: 10;
 }
 
 .member {
   height: 780px;
   background-color: green;
-}
-
-.about {
-  height: 780px;
-  background-color: white;
+  z-index: 10;
 }
 
 .view {
@@ -102,4 +112,5 @@ text-shadow:
 .contact {
   height: 780px;
   background-color: red;
+  z-index: 10;
 }
