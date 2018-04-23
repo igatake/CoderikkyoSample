@@ -1,10 +1,20 @@
+/*グラデーションのサイト
+https://uigradients.com/#OrangeCoral　*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 
-.header {
+a:hover img {
+  opacity:0.6;
+}
+
+#header {
   height: 120px;
   background-color: #fff;
   position: fixed;
@@ -14,6 +24,7 @@
   margin: 0;
   text-align: center;
   z-index: 1000;
+  box-shadow: 0 0.5px 4px gray;
 }
 
 .header__title {
@@ -21,28 +32,15 @@
   font-family: 'Impact';
   letter-spacing: 0.5em;
   color:  #fff;
-  text-shadow:
-    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
-    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
-    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
-    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
-    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
-    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
-    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
-    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
-}
-
-.title2 {
-  color:  rgba(255, 255, 255, 1);
-  text-shadow:
-    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
-    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
-    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
-    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
-    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
-    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
-    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
-    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
+  text-shadow: /*輪郭の色付け*/
+    rgb(0, 0, 0) 2px 0px,  rgb(0, 0, 0) -2px 0px,
+    rgb(0, 0, 0) 0px -2px, rgb(0, 0, 0) 0px 2px,
+    rgb(0, 0, 0) 2px 2px , rgb(0, 0, 0) -2px 2px,
+    rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px,
+    rgb(0, 0, 0) 1px 2px,  rgb(0, 0, 0) -1px 2px,
+    rgb(0, 0, 0) 1px -2px, rgb(0, 0, 0) -1px -2px,
+    rgb(0, 0, 0) 2px 1px,  rgb(0, 0, 0) -2px 1px,
+    rgb(0, 0, 0) 2px -1px, rgb(0, 0, 0) -2px -1px;
 }
 
 .items {
@@ -54,7 +52,6 @@
 }
 
 .items a{
-  text-decoration: none;
   font-size: 17px;
   font-family: 'Impact';
   color:  #fff;
@@ -69,48 +66,230 @@
     rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
   margin:0 100px;
 }
-.body {
-  height: 810px;
+
+.btn-top{
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  font-size: 15px;
+}
+
+
+
+#body {
+  margin-top: -120px;
+  height: 1050px;
   background-color: #fff;
-  background-image: url('images/human.jpg');
-  background-position: center;
+  background-image: url('images/cat.jpg');
+  background-size: 100%;
+  background-position: 50% -10%;
   background-repeat: no-repeat;
   background-attachment:fixed;
-  position: relative;
+
 }
 
-.body_message_bottom {
+.white-cover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(244, 244, 244, 0.3);
+}
+
+.body_message {
+  width: 100%;
   text-align: center;
-  top: 75%;
-  font-size: 60px;
-  font-family: 'Hiragino Mincho Pro';
-  font-weight: normal;
+  top: 55%;
+  font-size: 100px;
+  font-family: 'Impact';
+  font-weight: bold;
   letter-spacing: 0.05em;
   position: relative;
-  color: rgb(136, 136, 136);
+  color: black;
   padding-bottom: 0;
+  text-shadow:
+    #fff 2px 0px,  #fff -2px 0px,
+    #fff 0px -2px, #fff 0px 2px,
+    #fff 2px 2px , #fff -2px 2px,
+    #fff 2px -2px, #fff -2px -2px,
+    #fff 1px 2px,  #fff -1px 2px,
+    #fff 1px -2px, #fff -1px -2px,
+    #fff 2px 1px,  #fff -2px 1px,
+    #fff 2px 1px, #fff -2px -1px;
+}
+
+#about {
+  margin-top: -300px;
+  padding-top: 300px;
   width: 100%;
+  height: 450px;
 }
 
-.about {
-  height: 780px;
-  background-color: yellow;
-  z-index: 10;
+.abo-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 145, 75, 0.8), rgba(255, 0, 0, 0.8))
 }
 
-.member {
-  height: 780px;
-  background-color: green;
-  z-index: 10;
+.about_title {
+  position: relative;
+  top: 10%;
+  font-size: 50px;
+  text-align: center;
 }
 
-.view {
-  height: 780px;
-  background-color: blue;
+.about_massage {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  top: 15%;
 }
 
-.contact {
-  height: 780px;
-  background-color: red;
-  z-index: 10;
+#member {
+  margin-top: -300px;
+  padding-top: 300px;
+  width: 100%;
+  height: 500px;
+}
+
+.mem-container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-90deg, rgb(165, 241, 246), rgba(40, 110, 245, 0.8))
+}
+
+#member h1{
+  padding-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.teacher_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.teacher_img {
+  text-align: center;
+  width: 40%;
+  position: relative;
+  left: 10%;
+}
+
+.img-cau {
+  margin-top: 10px;
+  font-size:15px;
+  font-family: 'Osaka';
+}
+
+
+.teacher_text {
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+  margin-right: 30px;
+  position: relative;
+  left: 6%;
+}
+
+.tea_major {
+  font-size: 18px;
+}
+
+.teacher_text h4{
+  margin-top:5px;
+  position: relative;
+  left: 15%;
+  text-align: left;
+}
+
+.works h5{
+  text-align: left;
+  left: 15%;
+  position: relative;
+  padding-top: 10px;
+}
+
+.works a{
+  position: relative;
+  left: -20%;
+}
+
+.works img{
+  margin-top: 20px;
+  height:60px;
+  width: 80px;
+}
+
+#view {
+  margin-top: -300px;
+  padding-top: 300px;
+  height: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.view-abo {
+  height: 450px;
+  width: 50%;
+  position: relative;
+  margin: 20px 10px;
+}
+
+.view-text {
+  margin: 30px 40px;
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.view-text span{
+  font-size: 27px;
+}
+
+.view-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  direction: row;
+  background: linear-gradient(90deg, rgb(0, 176, 155), rgba(150, 201, 61, 0.8))
+}
+
+#contact {
+ height: 400px;
+ width: 100%;
+}
+
+.con-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.con-container h1{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 100px;
+  font-family: 'impact';
+  letter-spacing: 0.07em;
+  color: #fff;
+  text-shadow: /*輪郭の色付け*/
+    rgb(0, 0, 0) 1px 0px,  rgb(0, 0, 0) -1px 0px,
+    rgb(0, 0, 0) 0px -1px, rgb(0, 0, 0) 0px 1px,
+    rgb(0, 0, 0) 1px 1px , rgb(0, 0, 0) -1px 1px,
+    rgb(0, 0, 0) 1px -1px, rgb(0, 0, 0) -1px -1px,
+    rgb(0, 0, 0) 0.5px 1px,  rgb(0, 0, 0) -0.5px 1px,
+    rgb(0, 0, 0) 0.5px -1px, rgb(0, 0, 0) -0.5px -1px,
+    rgb(0, 0, 0) 1px 0.5px,  rgb(0, 0, 0) -1px 0.5px,
+    rgb(0, 0, 0) 1px -0.5px, rgb(0, 0, 0) -1px -0.5px;
+}
+
+.con-items {
+  margin-top: 35px;;
+}
+
+.a-top {
+  font-size: 20px;
+  font-weight: bold;
 }
