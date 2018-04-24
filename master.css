@@ -80,7 +80,7 @@ a:hover img {
   margin-top: -120px;
   height: 1050px;
   background-color: #fff;
-  background-image: url('images/cat.jpg');
+  background-image: url('images/keyboard.jpg');
   background-size: 100%;
   background-position: 50% -10%;
   background-repeat: no-repeat;
@@ -91,29 +91,15 @@ a:hover img {
 .white-cover {
   height: 100%;
   width: 100%;
-  background-color: rgba(244, 244, 244, 0.3);
+  background: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
 }
 
 .body_message {
   width: 100%;
   text-align: center;
-  top: 55%;
-  font-size: 100px;
-  font-family: 'Impact';
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  top: 80%;
   position: relative;
-  color: black;
   padding-bottom: 0;
-  text-shadow:
-    #fff 2px 0px,  #fff -2px 0px,
-    #fff 0px -2px, #fff 0px 2px,
-    #fff 2px 2px , #fff -2px 2px,
-    #fff 2px -2px, #fff -2px -2px,
-    #fff 1px 2px,  #fff -1px 2px,
-    #fff 1px -2px, #fff -1px -2px,
-    #fff 2px 1px,  #fff -2px 1px,
-    #fff 2px 1px, #fff -2px -1px;
 }
 
 #about {
